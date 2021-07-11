@@ -1,6 +1,4 @@
-from flask import Flask
+from flaskblog import app
 
-@app.route("/")
-@app.route("/home")
-def home():
-    return('First test page')
+if __name__ == '__main__': 
+    app.run(debug=True)
